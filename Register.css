@@ -1,0 +1,83 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #081b29
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding:40px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    color: #ededed;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/*button.btn-box {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+*/
+button:hover {
+    background-color: #0056b3;
+}
+
+#error-message {
+    color: red;
+}
+
+.btn-box {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0ef;
+    color: #081b29;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+}
+
+@keyframes slideTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
